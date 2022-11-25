@@ -63,7 +63,7 @@ pipeline {
         withSonarQubeEnv('sonarqube') {
           // Install nodejs to fix node error for scanning css and js files
           sh 'curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash'
-          sh '. /home/ubuntu/.bashrc'
+          sh 'sudo . /home/ubuntu/.bashrc'
           sh 'nvm install 12 --lts'
           sh "${scannerHome}/bin/sonar-scanner"
         }
