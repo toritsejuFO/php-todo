@@ -12,7 +12,7 @@ pipeline {
 
     stage('Checkout SCM') {
       steps {
-            git branch: '$BRANCH_NAME', url: 'https://github.com/darey-devops/php-todo.git'
+            git branch: '$BRANCH_NAME', url: 'https://github.com/toritsejuFO/php-todo.git'
       }
     }
 
