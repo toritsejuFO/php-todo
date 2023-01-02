@@ -2,7 +2,7 @@ pipeline {
   agent any
 
   environment {
-    TAG = "${env.BRANCH_NAME}-${env.BRANCH_NUMBER}"
+    TAG = "${env.BRANCH_NAME}-${env.BUILD_NUMBER}"
     DOCKER_CREDS = credentials('docker_creds')
   }
 
